@@ -1,5 +1,5 @@
 # bun-lib-starter
-This is my personal stack for making npm packages. While I have been using this stack for some time, this "cutout" is very new and there could be things wrong with it. Please submit an issue. I welcome contributors!
+I have been using this as my personal stack for shipping npm packages for some time and decided to make a "cutout" to share. Be cautious as this project is very new and there are probably things wrong with it. Please submit an issue. I welcome contributors!
 
 > Install [Bun](https://bun.sh/docs/installation): `curl -fsSL https://bun.sh/install | bash` [View install script](https://bun.sh/install)
 
