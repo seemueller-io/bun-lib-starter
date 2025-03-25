@@ -1,16 +1,39 @@
-# bun-lib-starter
-I have been using this as my personal stack for shipping npm packages for some time and decided to make a "cutout" to share. Be cautious as this project is very new and there are probably things wrong with it. Please submit an issue. I welcome contributors!
-
-> Install [Bun](https://bun.sh/docs/installation): `curl -fsSL https://bun.sh/install | bash` [View install script](https://bun.sh/install)
-
-## AI Generated README
-### Bun Library Template
+# Bun Library Template
 
 This repository is a template for building a library **and** a CLI using Bun.
 It’s meant to be used via the **"Use this Repository as a Template"** button on
 GitHub.
 
-## Overview
+### bun-lib-starter
+I have been using this as my personal stack for shipping npm packages for some time and decided to make a "cutout" to share. Exercise caution as this project is very new and there are probably things wrong with it. Please submit an issue. I welcome contributors!
+
+
+## Quickstart
+```bash
+# optionally install bun
+curl -fsSL https://bun.sh/install | bash
+
+# install project dependencies
+bun install
+
+# build the project
+bun run build
+
+# run project tests
+bun test
+```
+[View bun installation script](https://bun.sh/install)
+
+
+## Quick Reference
+```bash
+bun dev # runs the cli
+bun test # runs tests of code in lib.ts and state.ts
+bun deploy:dev # publish development version
+bun release-it # interactive release creation
+```
+
+## Project Structure
 
 - **Library & CLI:**  
   The `src/` folder contains both library functionality (`src/lib.ts`) and a
@@ -48,22 +71,6 @@ GitHub.
    ```bash
    bun run deploy:dev
    ```
-
-### Releasing with release-it
-
-1. Make sure all your changes are committed.
-2. Run the release command:
-   ```bash
-   bun run release
-   ```
-3. Follow the prompts provided by release-it. It will:
-   - Update the version in your package.
-   - Create a new git tag.
-   - Commit the version bump.
-   - Publish the package to npm (if configured).
-
-This automates the release process and ensures a consistent versioning workflow.
-
 ---
 ## License
 
