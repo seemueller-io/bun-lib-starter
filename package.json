@@ -1,6 +1,6 @@
 {
   "name": "bun-template-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "seemueller-io",
   "type": "module",
   "description": "bun template for creating npm packages with bun",
