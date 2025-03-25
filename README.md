@@ -5,7 +5,7 @@ It’s meant to be used via the **"Use this Repository as a Template"** button o
 GitHub.
 
 ### bun-lib-starter
-I have been using this as my personal stack for shipping npm packages for some time and decided to make a "cutout" to share. Exercise caution as this project is very new and there are probably things wrong with it. Please submit an issue. I welcome contributors!
+I have been using this as my personal stack for shipping npm packages for some time and decided to make a "cutout" to share. Why Bun? It's nice when things just work. Exercise caution as this project is very new and there are probably things wrong with it. Please submit an issue. I welcome contributors!
 
 
 ## Quickstart
