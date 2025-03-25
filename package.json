@@ -24,7 +24,7 @@
     }
   },
   "bin": {
-    "my-cli": "./dist/cli.js"
+    "bun-lib-starter": "./dist/cli.js"
   },
   "files": [
     "dist"
