@@ -15,8 +15,8 @@ GitHub.
   test, and run your project.
 
 - **Package Setup:**  
-  The `package.json` is preconfigured with build and publish scripts, allowing
-  you to easily package and publish a new version.
+  The `package.json` is preconfigured with build, release, and publish scripts,
+  allowing you to easily package and publish a new version.
 
 ## Making a Change
 
@@ -34,12 +34,29 @@ GitHub.
 
 ## Publishing a New Version
 
+### Manual Publish
+
 1. Update the version in `package.json` for your new release.
 2. Commit your changes.
 3. Publish the new version to npm:
    ```bash
    bun run deploy:dev
    ```
+
+### Releasing with release-it
+
+1. Make sure all your changes are committed.
+2. Run the release command:
+   ```bash
+   bun run release
+   ```
+3. Follow the prompts provided by release-it. It will:
+   - Update the version in your package.
+   - Create a new git tag.
+   - Commit the version bump.
+   - Publish the package to npm (if configured).
+
+This automates the release process and ensures a consistent versioning workflow.
 
 ## License
 
