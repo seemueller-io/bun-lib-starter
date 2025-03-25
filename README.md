@@ -1,4 +1,9 @@
-# Bun Template Library
+# bun-lib-starter
+This is my personal stack for making npm packages. While I have been using this stack for some time, this "cutout" is very new and there could be things wrong with it. Please submit an issue. I welcome contributors!
+
+
+## AI Generated README
+### Bun Library Template
 
 This repository is a template for building a library **and** a CLI using Bun.
 It’s meant to be used via the **"Use this Repository as a Template"** button on
@@ -58,6 +63,34 @@ GitHub.
 
 This automates the release process and ensures a consistent versioning workflow.
 
+---
 ## License
 
-MIT © 2024 Geoff Seemueller
+MIT License
+
+© 2024 Geoff Seemueller
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## TODO:
+- refactor to project generator interface i.e `npm create bun-lib-starter`
+- align release and publish with github workflow
+
