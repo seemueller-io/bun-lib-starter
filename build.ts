@@ -1,5 +1,5 @@
 import isolatedDecl from 'bun-plugin-isolated-decl';
-
+import Bun from 'bun';
 // handles building the types for the library
 await Bun.build({
   entrypoints: ['./src/index.ts', './src/types.ts'],
@@ -7,7 +7,7 @@ await Bun.build({
   target: 'browser',
   plugins: [
     isolatedDecl({
-      forceGenerate: true,  // Generate declaration files even if there are errors
-    })
+      forceGenerate: true, // Generate declaration files even if there are errors
+    }),
   ],
 });

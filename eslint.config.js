@@ -29,10 +29,10 @@ export default [
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'warn',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-      'no-console': ['warn', { allow: ['warn', 'error'] }]
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
     },
   },
   {
-    ignores: ['dist/**', '*.test.{js,ts}', '**/*.spec.{js,ts}'],
+    ignores: ['dist/**', '*.test.{js,ts}', '**/*.test.{js,ts}'],
   },
 ];

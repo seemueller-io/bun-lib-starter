@@ -8,5 +8,6 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "types": ["bun", "src/types.d.ts"]
-  }
+  },
+  "include": ["build.ts", "src"]
 }
