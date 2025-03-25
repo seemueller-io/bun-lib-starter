@@ -41,7 +41,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,yml,yaml}\"",
     "fix": "bun run format && bun run lint:fix",
-    "release": "release-it"
+    "release": "release-it",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
@@ -54,6 +55,7 @@
     "bun-plugin-isolated-decl": "^0.1.6",
     "eslint": "^9.14.0",
     "globals": "^15.12.0",
+    "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "release-it": "^18.1.2",
     "tslog": "^4.9.3",
