@@ -1,0 +1,67 @@
+{
+  "name": "bun-template-lib",
+  "version": "0.0.1",
+  "author": "seemueller-io",
+  "type": "module",
+  "description": "bun template for creating npm packages with bun",
+  "repository": "https://github.com/seemueller-io/bun-template-lib.git",
+  "keywords": [
+    "typescript",
+    "bunjs",
+    "bun",
+    "minimalist",
+    "boilerplate",
+    "template",
+    "starter",
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "bin": {
+    "my-cli": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "bun src/cli.ts",
+    "dev": "bun src/cli.ts",
+    "build": "rm -rf dist && bun build ./src/index.ts ./src/cli.ts ./src/logger.ts --splitting --outdir dist --target browser && bun ./build.ts",
+    "prepublishOnly": "bun run build",
+    "cli": "bun ./src/cli.ts",
+    "test": "bun run build && bun test && node dist/cli.js",
+    "lint": "eslint .",
+    "deploy:dev": "bun publish",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,yml,yaml}\"",
+    "fix": "bun run format && bun run lint:fix",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/bun": "latest",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "bun": "^1.1.34",
+    "bun-plugin-isolated-decl": "^0.1.6",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "release-it": "^18.1.2",
+    "tslog": "^4.9.3",
+    "typescript": "^5.6.3"
+  },
+  "module": "src/index.ts",
+  "private": true,
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json"
+  }
+}
